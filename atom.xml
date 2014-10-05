@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Love XiangRY]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://sthkey.com/"/>
-  <updated>2014-10-05T08:44:47.465Z</updated>
+  <updated>2014-10-05T08:46:03.327Z</updated>
   <id>http://sthkey.com/</id>
   
   <author>
@@ -19,7 +19,7 @@
     <link href="http://sthkey.com/2014/10/05/%E5%88%9D%E8%AF%86markdown/"/>
     <id>http://sthkey.com/2014/10/05/初识markdown/</id>
     <published>2014-10-05T04:10:30.000Z</published>
-    <updated>2014-10-05T08:44:37.000Z</updated>
+    <updated>2014-10-05T08:45:51.000Z</updated>
     <content type="html"><![CDATA[<h2 id="接触">接触</h2>
 <p><em>程序猿一只，突然意识到要写点东西，为hexo而接触到了markdown这个为广大码农所用的标记语言，<br>看来自己不是个合格的程序员那。在这里用这片文字作为自己的第一步，hello world。</em></p>
 <hr>
@@ -106,7 +106,7 @@
 </code></pre><h2 id="自动链接">自动链接</h2>
 <hr>
 <p><a href="http://ibruce.info">http://ibruce.info</a></p>
-<a href="&#109;&#97;&#x69;&#x6c;&#116;&#111;&#58;&#x62;&#117;&#x2e;&#114;&#x75;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;">&#x62;&#117;&#x2e;&#114;&#x75;&#x40;&#x71;&#x71;&#x2e;&#x63;&#111;&#x6d;</a>
+<a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#58;&#x62;&#117;&#46;&#114;&#x75;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#x62;&#117;&#46;&#114;&#x75;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a>
 
 <pre><code>    尖括号
     <span class="tag">&lt;<span class="title">http:</span>//<span class="attribute">ibruce.info</span>&gt;</span>
