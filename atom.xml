@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Love XiangRY]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://sthkey.com/"/>
-  <updated>2014-10-05T12:47:00.242Z</updated>
+  <updated>2014-10-06T02:57:57.910Z</updated>
   <id>http://sthkey.com/</id>
   
   <author>
@@ -13,6 +13,24 @@
   </author>
   
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[阅读]]></title>
+    <link href="http://sthkey.com/2014/10/06/%E9%98%85%E8%AF%BB/"/>
+    <id>http://sthkey.com/2014/10/06/阅读/</id>
+    <published>2014-10-06T02:36:32.000Z</published>
+    <updated>2014-10-06T02:45:23.000Z</updated>
+    <content type="html"><![CDATA[<p><a id="more"></a><br><img src="http://img-pili.qiniudn.com/pili%2Fdesktop%2Fxiangranyi.jpg" alt=""></p>
+<p><a href="http://img-pili.qiniudn.com/pili%2Fdesktop%2Fxiangranyi.jpg">香染衣</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>]]>
+    
+    </summary>
+    
+      <category term="阅读" scheme="http://sthkey.com/tags/%E9%98%85%E8%AF%BB/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
