@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Love XiangRY]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://sthkey.com/"/>
-  <updated>2014-11-04T04:25:28.106Z</updated>
+  <updated>2014-11-04T10:59:29.917Z</updated>
   <id>http://sthkey.com/</id>
   
   <author>
@@ -15,16 +15,32 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[test_]]></title>
+    <link href="http://sthkey.com/2014/11/04/test/"/>
+    <id>http://sthkey.com/2014/11/04/test/</id>
+    <published>2014-11-04T10:32:52.000Z</published>
+    <updated>2014-11-04T10:55:33.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[2014.11.04]]></title>
     <link href="http://sthkey.com/2014/11/04/2014-11-04/"/>
     <id>http://sthkey.com/2014/11/04/2014-11-04/</id>
     <published>2014-11-04T04:18:24.000Z</published>
-    <updated>2014-11-04T04:23:53.000Z</updated>
+    <updated>2014-11-04T10:59:20.000Z</updated>
     <content type="html"><![CDATA[<p>_昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。</p>
+<h3 id="Xcodebuild">Xcodebuild</h3>
+<p><em>当换一台机器的时候，你写的脚本还能正常跑起来吗？</em>有心整理一下ios的打包脚本，更智能一点，省去哪些配置的过程。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>_昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。</p>
-]]>
+<h3 id="Xcodebuild">Xcodebuild</h3>
+<p><em>当换一台机器的时候，你写的脚本还能正常跑起来吗？</em>有心整理一下]]>
     </summary>
     
   </entry>
@@ -60,156 +76,6 @@
     <summary type="html">
     <![CDATA[<p><a href="http://ohcoder.com/">Oh!Coder</a></p>
 ]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[test]]></title>
-    <link href="http://sthkey.com/2014/10/18/test/"/>
-    <id>http://sthkey.com/2014/10/18/test/</id>
-    <published>2014-10-18T06:48:19.000Z</published>
-    <updated>2014-10-18T07:08:47.000Z</updated>
-    <content type="html"><![CDATA[<p><a href="http://zengrong.net/post/2169.htm">Python 包管理工具解惑</a></p>
-<p>python packaging</p>
-<h2 id="一、困惑">一、困惑</h2>
-<p>作为一个 Python 初学者，我在包管理上感到相当疑惑（嗯，是困惑）。主要表现在下面几个方面：</p>
-<ol>
-<li>这几个包管理工具有什么不同？<ul>
-<li>distutils</li>
-<li>setuptools</li>
-<li>distribute</li>
-<li>disutils2</li>
-<li>distlib</li>
-<li>pip</li>
-</ul>
-</li>
-<li>什么时候该用pip，什么时候该用 <code>setup.py</code> ，它们有关系么？</li>
-<li><code>easy_install</code>、<code>ez_setup.py</code>、<code>setup.py</code>、<code>setup.cfg</code> 分别都是干啥的？</li>
-<li>wheel 和 pip 的关系？</li>
-<li>Egg 和 whl 的关系？</li>
-<li>如何发布自己的模块（发布到PyPI）？</li>
-<li>如何进行模块的私有发布（不发布到PyPI）？</li>
-</ol>
-<p>为了弄清这些问题，我找了许多资料。最后发现最好的资料还是 python 的官方文档。</p>
-<p>下面是阅读了所有我找到的资料后的一个总结，希望能帮到几个月后又把这些全部忘光的那个自己。<a id="more"></a></p>
-<h2 id="二、python_包管理工具大乱斗">二、python 包管理工具大乱斗</h2>
-<p>我用时间顺序来描述乱斗过程。</p>
-<h3 id="1-_distutils">1. distutils</h3>
-<p><a href="https://docs.python.org/3/library/distutils.html">distutils</a> 是 python 标准库的一部分，2000年发布。使用它能够进行 python 模块的 <a href="https://docs.python.org/3/install/index.html">安装</a> 和 <a href="https://docs.python.org/3/distutils/index.html">发布</a>。</p>
-<p>setup.py 就是利用 <a href="https://docs.python.org/3/library/distutils.html">distutils</a> 的功能写成，我们可以看一个简单的 <a href="https://docs.python.org/3/distutils/introduction.html?highlight=distutils#a-simple-example">setup.py</a> 的例子。</p>
-<p>在这里可以看到关于 setupt.py 格式的所有详细描述：<a href="https://docs.python.org/3/distutils/setupscript.html">Writing the Setup Script</a>。</p>
-<p>要安装一个模块到当前的 python 环境中，可以使用这个模块提供的 setup.py 文件：</p>
-<pre lang="python">
-python setup.py install
-</pre>
-
-<p>下面的代码会发布一个 python 模块，将其打包成 tar.gz 或者 zip 压缩包：</p>
-<pre lang="python">
-python setup.py sdist
-</pre>
-
-<p>甚至能打包成 rpm 或者 exe 安装包：</p>
-<pre lang="python">
-python setup.py bdist_rpm
-python setup.py bdist_wininst
-</pre>
-
-<h3 id="2-_setuptools_和_distribute">2. setuptools 和 distribute</h3>
-<p><a href="https://docs.python.org/3/distutils/setupscript.html">setuptools</a> 是一个为了增强 distutils 而开发的集合，2004年发布。它包含了 <code>easy_install</code> 这个工具。</p>
-<p><a href="https://pypi.python.org/pypi/setuptools/#installation-instructions">ez_setup.py</a> 是 setuptools 的安装工具。<code>ez</code> 就是 <code>easy</code> 的缩写。</p>
-<p>简单的说，setuptools 是一个项目的名称，是基础组件。而 <code>easy_install</code> 是这个项目中提供的工具，它依赖基础组件工作。</p>
-<p><strong>为了方便描述，下面文章中提到的 setuptools 被认为与 <code>easy_install</code> 同义。</strong></p>
-<p>使用 setuptools 可以自动 <a href="https://pythonhosted.org/setuptools/easy_install.html">下载、构建、安装和管理</a> python 模块。</p>
-<p>例如，从 PyPI 上安装一个包：</p>
-<pre lang="python">
-easy_install SQLObject
-</pre>
-
-<p>下载一个包文件，然后安装它：</p>
-<pre lang="python">
-easy_install http://example.com/path/to/MyPackage-1.2.3.tgz
-</pre>
-
-<p>从一个 .egg 格式安装：</p>
-<pre lang="python">
-easy_install /my_downloads/OtherPackage-3.2.1-py2.3.egg
-</pre>
-
-<p><a href="https://pypi.python.org/pypi/distribute">distribute</a> 是 setuptools 的一个分支版本。分支的原因可能是有一部分开发者认为 setuptools 开发太慢了。但现在，distribute 又合并回了 setuptools 中。因此，我们可以认为它们是同一个东西。事实上，如果你查看一下 <code>easy_install</code> 的版本，会发现它本质上就是 distribute 。</p>
-<pre lang="python">
-# easy_install --version
-distribute 0.6.28
-</pre>
-
-<h3 id="3-_Eggs">3. Eggs</h3>
-<p><a href="http://pythonhosted.org/setuptools/formats.html">Eggs</a> 格式是 setuptools 引入的一种文件格式，它使用 .egg 扩展名，用于 Python 模块的安装。</p>
-<p>setuptools 可以识别这种格式。并解析它，安装它。</p>
-<p>想要详细了解，可以看看这篇：<a href="http://peak.telecommunity.com/DevCenter/PythonEggs">The Quick Guide to Python Eggs</a>。</p>
-<blockquote>
-<p>Eggs are to Pythons as Jars are to Java..</p>
-</blockquote>
-<h3 id="4-_pip">4. pip</h3>
-<p><strong>注意，从此处开始，<code>easy_install</code> 和 <code>setuptools</code> 不再同义。</strong></p>
-<p><a href="https://pypi.python.org/pypi/pip/">pip</a> 是目前 python 包管理的事实标准，2008年发布。它被用作 <code>easy_install</code> 的替代品，但是它仍有大量的功能建立在 setuptools 组件之上。</p>
-<p>pip 希望不再使用 <a href="http://peak.telecommunity.com/DevCenter/PythonEggs">Eggs</a> 格式（虽然它支持 Eggs），而更希望采用“源码发行版”（使用 <code>python setup.py sdict</code> 创建）。这可以充分利用 <a href="https://pip.pypa.io/en/latest/reference/pip_install.html#requirements-file-format">Requirements File Format</a> 提供的方便功能。</p>
-<p>pip 可以利用 requirments.txt 来实现在依赖的安装。在 <code>setup.py</code> 中，也存在一个 <code>install_requires</code> 表来指定依赖的安装。它们的区别在哪里？可以看这篇文章：<a href="https://caremad.io/blog/setup-vs-requirement/">setup.py vs requirements.txt</a> <a href="http://pyzh.readthedocs.org/en/latest/python-setup-dot-py-vs-requirements-dot-txt.html">（中文版）</a>。</p>
-<p>pip 支持 [git/svn/hg 等流行的 VCS 系统]，可以直接从 gz 或者 zip 压缩包安装，支持搜索包，以及指定服务器安装等等功能。</p>
-<p><a href="https://packaging.python.org/en/latest/technical.html#pip-vs-easy-install">pip vs easy_install</a> 详细介绍了两者的不同。它们可以说是各占胜场，但 pip 明显优势更大。</p>
-<h3 id="5-_wheel">5. wheel</h3>
-<p><a href="http://wheel.rtfd.org/">wheel</a> 本质上是一个 zip 包格式，它使用 .whl 扩展名，用于 python 模块的安装，它的出现是为了替代 Eggs。</p>
-<p>wheel 还提供了一个 <code>bdist_wheel</code> 作为 setuptools 的扩展命令，这个命令可以用来生成 wheel 包。</p>
-<p>pip 提供了一个 wheel 子命令来安装 wheel 包。当然，需要先安装 wheel 模块。</p>
-<p><a href="http://wheel.readthedocs.org/en/latest/#defining-the-python-version">setup.cfg</a> 可以用来定义 wheel 打包时候的相关信息。</p>
-<p><a href="https://packaging.python.org/en/latest/technical.html#wheel-vs-egg">Wheel vs Egg</a> 详细介绍了 wheel 和 Eggs 格式的区别，很显然，wheel 优势明显。</p>
-<p><a href="http://pythonwheels.com/">Python Wheels</a> 网站展示了使用 Wheels 发行的 python 模块在 PyPI 上的占有率。</p>
-<p><a href="https://pypip.in/wheel.html">pypip.in</a> 也支持 wheel。</p>
-<h3 id="6-_distutils2_和_distlib">6. distutils2 和 distlib</h3>
-<p><a href="http://pythonhosted.org//Distutils2/">distutils2</a> 被设计为 <a href="https://docs.python.org/3/library/distutils.html">distutils</a> 的替代品。从2009年开发到2012年。它包含更多的功能，并希望以 <code>packaging</code> 作为名称进入 python 3.3 成为标准库的一部分。但这个计划 <a href="https://mail.python.org/pipermail/python-dev/2012-June/120430.html">后来停滞了</a> 。</p>
-<p><a href="https://pypi.python.org/pypi/distlib">distlib</a> 是 <a href="http://pythonhosted.org//Distutils2/">distutils2</a> 的部分，它为 <code>distutils2/packaging</code> 提供的低级功能增加高级 API，使其便于使用。</p>
-<p><a href="http://pythonhosted.org/distlib/overview.html">这里</a> 介绍了 distlib 没有进入 python 3.3 标准库的一些原因。</p>
-<p>因此，可以暂时不必了解这两个工具，静观其变即可。</p>
-<h2 id="三、工具选择">三、工具选择</h2>
-<p>如果仔细看过上面的乱斗内容，我相信你已经清楚当前应该如何选择了。</p>
-<p>对于我这样刚刚开始的新手来说，自然是使用 pip 而不使用 <code>easy_install</code> 了。</p>
-<p>如果发布模块，当然是使用 wheel 格式。</p>
-<h2 id="四、发布自己的模块">四、发布自己的模块</h2>
-<p>对于 python3 程序员来说，当然应该先看这一篇：<a href="https://docs.python.org/3/distributing/index.html">Distributing Python Modules</a>。</p>
-<p>另外，<a href="https://packaging.python.org/en/latest/distributing.html">Tutorial on Packaging and Distributing Projects</a> 也足够详细和官方。</p>
-<p>而 Python2 程序员则应该看这篇 <a href="https://docs.python.org/2.7/distutils/index.html">Distributing Python Modules</a> 。</p>
-<p>当然，setuptools 的官方文档也是不错的教程：<a href="http://pythonhosted.org/setuptools/setuptools.html">Building and Distributing Packages with Setuptools</a> 。</p>
-<p>这篇教程可以用来入门：<a href="https://hynek.me/articles/sharing-your-labor-of-love-pypi-quick-and-dirty/">Sharing Your Labor of Love: PyPI Quick and Dirty</a></p>
-<p>至于如何发布自己的模块到 PyPI 或者搭建自己的私有包管理服务器，上面的文章已经讲得非常清楚了。</p>
-<h2 id="五、引用">五、引用</h2>
-<p>上面提到的大部分资料，都是在这里找到，或者是提到：<a href="https://packaging.python.org/en/latest/">Python Packaging User Guide</a>。</p>
-<p>感谢这篇文章，让我不再纠结，然后又下决心写了本文继续纠结：<a href="http://stackoverflow.com/a/14753678">Differences between distribute, distutils, setuptools and distutils2?</a> 。</p>
-<p>这篇文章也比较碎：<a href="http://blog.csdn.net/lynn_kong/article/details/17540207">关于python中的setup.py</a>，而且比本文范例更多。</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p><a href="http://zengrong.net/post/2169.htm">Python 包管理工具解惑</a></p>
-<p>python packaging</p>
-<h2 id="一、困惑">一、困惑</h2>
-<p>作为一个 Python 初学者，我在包管理上感到相当疑惑（嗯，是困惑）。主要表现在下面几个方面：</p>
-<ol>
-<li>这几个包管理工具有什么不同？<ul>
-<li>distutils</li>
-<li>setuptools</li>
-<li>distribute</li>
-<li>disutils2</li>
-<li>distlib</li>
-<li>pip</li>
-</ul>
-</li>
-<li>什么时候该用pip，什么时候该用 <code>setup.py</code> ，它们有关系么？</li>
-<li><code>easy_install</code>、<code>ez_setup.py</code>、<code>setup.py</code>、<code>setup.cfg</code> 分别都是干啥的？</li>
-<li>wheel 和 pip 的关系？</li>
-<li>Egg 和 whl 的关系？</li>
-<li>如何发布自己的模块（发布到PyPI）？</li>
-<li>如何进行模块的私有发布（不发布到PyPI）？</li>
-</ol>
-<p>为了弄清这些问题，我找了许多资料。最后发现最好的资料还是 python 的官方文档。</p>
-<p>下面是阅读了所有我找到的资料后的一个总结，希望能帮到几个月后又把这些全部忘光的那个自己。]]>
-    
     </summary>
     
   </entry>
