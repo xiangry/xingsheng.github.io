@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Love XiangRY]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://sthkey.com/"/>
-  <updated>2014-11-04T13:43:49.414Z</updated>
+  <updated>2014-11-04T14:02:24.272Z</updated>
   <id>http://sthkey.com/</id>
   
   <author>
@@ -19,8 +19,9 @@
     <link href="http://sthkey.com/2014/11/04/2014-11-04/"/>
     <id>http://sthkey.com/2014/11/04/2014-11-04/</id>
     <published>2014-11-04T04:18:24.000Z</published>
-    <updated>2014-11-04T13:41:40.000Z</updated>
-    <content type="html"><![CDATA[<p>_昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。</p>
+    <updated>2014-11-04T14:02:08.000Z</updated>
+    <content type="html"><![CDATA[<p><em>昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。<br><img src="http://img-pili.qiniudn.com/pili/desktop/jiwuxia_desk.jpg" alt="霁无瑕">
+</em>满夕霜雪人独影，红尘今古几月明？笑寒饮，惯新晴，千山已过风云行_</p>
 <a id="more"></a>
 
 <h2 id="Xcodebuild">Xcodebuild</h2>
@@ -45,7 +46,8 @@
 <p><em>工程有一些引用的路径不能够使用相对路径，当我的工程在另外一台机器上打包时就不能正常工作了，需要重新设置一下。</em><code>%&gt;_&lt;%</code></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>_昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。</p>
+    <![CDATA[<p><em>昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。<br><img src="http://img-pili.qiniudn.com/pili/desktop/jiwuxia_desk.jpg" alt="霁无瑕">
+</em>满夕霜雪人独影，红尘今古几月明？笑寒饮，惯新晴，千山已过风云行_</p>
 ]]>
     
     </summary>
