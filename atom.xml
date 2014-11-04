@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Love XiangRY]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://sthkey.com/"/>
-  <updated>2014-11-04T10:59:29.917Z</updated>
+  <updated>2014-11-04T13:43:49.414Z</updated>
   <id>http://sthkey.com/</id>
   
   <author>
@@ -15,32 +15,39 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
-    <title><![CDATA[test_]]></title>
-    <link href="http://sthkey.com/2014/11/04/test/"/>
-    <id>http://sthkey.com/2014/11/04/test/</id>
-    <published>2014-11-04T10:32:52.000Z</published>
-    <updated>2014-11-04T10:55:33.000Z</updated>
-    <content type="html"><![CDATA[]]></content>
-    <summary type="html">
-    <![CDATA[]]>
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[2014.11.04]]></title>
     <link href="http://sthkey.com/2014/11/04/2014-11-04/"/>
     <id>http://sthkey.com/2014/11/04/2014-11-04/</id>
     <published>2014-11-04T04:18:24.000Z</published>
-    <updated>2014-11-04T10:59:20.000Z</updated>
+    <updated>2014-11-04T13:41:40.000Z</updated>
     <content type="html"><![CDATA[<p>_昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。</p>
-<h3 id="Xcodebuild">Xcodebuild</h3>
-<p><em>当换一台机器的时候，你写的脚本还能正常跑起来吗？</em>有心整理一下ios的打包脚本，更智能一点，省去哪些配置的过程。</p>
+<a id="more"></a>
+
+<h2 id="Xcodebuild">Xcodebuild</h2>
+<p><em>当换一台机器的时候，你写的脚本还能正常跑起来吗？</em><code>:-D</code><br>有心整理一下ios的打包脚本，更智能一点，省去哪些配置的过程。</p>
+<p>有必要了解一下自动打包是如何实现的，那就是交给<code>xcrun</code>、<code>xcodebuild</code>。</p>
+<ul>
+<li><code>xcodebuild</code>负责将工程源文件编译成<em>xxx.app</em></li>
+<li><code>xcrun</code>负责给<em>xxx.app</em>签名并打包成<em>xxx.ipa</em></li>
+</ul>
+<h3 id="签名的过程">签名的过程</h3>
+<ul>
+<li><p>第一步清理工程：<br><code>xcodebuild -targe targetName clean           # 清理工程</code></p>
+</li>
+<li><p>第二部编译工程：<br><code>xcodebuild -target targetName build            #编译工程 另[build]是默认参数</code></p>
+</li>
+<li><p>第三部打包<br><code>打包的参数就是 xcrun -sdk iphoneos PackageApplication -v 源app路径 -o 输出的ipa路径</code><br><code>xcrun -sdk iphoneos PackageApplication -v $BuildPath/xxx.app -o xxx.ipa</code></p>
+</li>
+<li><p>给应用签名（这两个命令都可以实现）<br><code>xcodebuild -target targetName CODE_SIGN_IDENTITY=&quot;iPhone Distribution:XXXXXX&quot;</code><br><code>xcrun -sdk iphoneos PackageApplication -v 源app路径 -o 输出的ipa路径 --sign &quot;iPhone Distribution:XXXXXX&quot;</code></p>
+</li>
+</ul>
+<h2 id="新需求">新需求</h2>
+<p><em>工程有一些引用的路径不能够使用相对路径，当我的工程在另外一台机器上打包时就不能正常工作了，需要重新设置一下。</em><code>%&gt;_&lt;%</code></p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>_昨天开个好头，但是却没写什么东西。没什么事却弄到了晚上0点多。原来留下的坑真深，真实凡是预则立不预则废啊。</p>
-<h3 id="Xcodebuild">Xcodebuild</h3>
-<p><em>当换一台机器的时候，你写的脚本还能正常跑起来吗？</em>有心整理一下]]>
+]]>
+    
     </summary>
     
   </entry>
