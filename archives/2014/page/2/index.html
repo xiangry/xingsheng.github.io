@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>2014.11.06 | XingSheng&#39;s Blog</title>
+  <title>第 2 页 | 归档：2014 | XingSheng&#39;s Blog</title>
   <meta name="author" content="XingSheng">
   
   <meta name="description" content="heihei">
@@ -11,7 +11,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="2014.11.06"/>
+  
   <meta property="og:site_name" content="XingSheng&#39;s Blog"/>
 
   
@@ -55,60 +55,52 @@
   <div class="clearfix"></div>
 </div></header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2014</h2>
+
+
+  
+    <article class="post">
   
   <div class="post-content">
     <header>
       
       
         <div class="icon"></div>
-        <time datetime="2014-11-06T02:14:21.000Z"><a href="/2014/11/06/2014-11-06/">11月 6 2014</a></time>
+        <time datetime="2014-10-05T02:38:55.000Z"><a href="/2014/10/05/bash-环境变量/">10月 5 2014</a></time>
       
       
   
-    <h1 class="title">2014.11.06</h1>
+    <h1 class="title"><a href="/2014/10/05/bash-环境变量/">bash 环境变量</a></h1>
   
 
       
     </header>
     <div class="entry">
       
-        
-          
-        
-        <h2 id="昨晚忘记关窗户，冻醒了。%&gt;_&lt;%">昨晚忘记关窗户，冻醒了。<code>%&gt;_&lt;%</code></h2>
-<a id="more"></a>
-
-<p>可怜的家伙，百科都一笔带过了<br><img src="http://img-pili.qiniudn.com/pili/desktop/guiyinshi.gif" alt="鬼吟诗"><br><em>空待三年又三年，年年总是风信迟。<br>人间有情记花簿，黄泉无人空吟诗。<br>白首相诺岁月老，山河转眼瘦沙时。<br>酆都添灯闻鬼唱，走马红尘几度痴。</em></p>
-<ul>
-<li><p><strong>BUILD_SHARED_LIBRARY</strong><br>  指向编译脚本，手机所有的你再<code>LOCAL_XXX</code>变量中提供的信息，并且决定如何把你列出的源代码文件编译成一个共享库。注意，你必须至少在包含这个文件之前定义<code>LOCAL_MODULE</code>和<code>LOCAL_SRC_FILES</code>,使用例子：<code>include $(BUILD_SHARED_LIBRRY)</code><br>  这将会生成一个名为<code>lib$(LOCAL_MODULE).so</code>的文件。</p>
-</li>
-<li><p><strong>BUILD_STATIC_LIBRARY</strong><br>  一个<code>BUILD_SHARED_LIBRARY</code>变量用于一个静态库。静态库不会复制到你的<code>project/packages</code>中，诞生能够用于编译共享库。</p>
-</li>
-</ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">include</span> <span class="variable">$(</span><span class="constant">BUILD_STATIC_LIBRARY</span>)</div><div class="line">这将生成一个名为lib<span class="variable">$(</span><span class="constant">LOCAL_MODULE</span>).a的文件</div></pre></td></tr></table></figure>
-
-<ul>
-<li><p><strong>TARGET_ARCH</strong><br>  目标CPU平台的名字，如同在android开放源代码中指定的那样。如果是<code>arm</code>，标示要生成ARM兼容命令，与CPU架构的修订版无关。</p>
-</li>
-<li><p><strong>TAEGET_PLATFORM</strong><br>  <code>Android.mk</code>解析的时候，目标Android平台的名字<br>  <em>android-3  -&gt;Offical Android 1.5 system imgages</em><br>  <em>android-4  -&gt;Offical Android 2.0 system imgages</em></p>
-</li>
-<li><p><strong>TARGET_ARCH_ABI</strong><br>  可以支持<code>armeabi</code>和<code>armeabi-v7a</code>。在现在的版本中，一般把这两个值简单地定义为arm，通过android平台内部对他重新定义来获得更好的分配</p>
-</li>
-<li><p><strong>TARGET_ABI</strong><br>  目标平台和ABI的组合，它事实上被定义成$<code>(TARGET_PLATFORM)-$(TARGET_ARCH_ABI)</code>在你想要在真实地设备中针对一个特别的目标系统进行测试时，会用到，在默认的情况下它会使<code>android-3-arm</code></p>
-</li>
-</ul>
-<p>(又完不成了)</p>
-
+        <p>-日常应用和开发过程中，经常会遇到一些问题，比如移动删除某些文件，批量的做某些重复的工作、某些工具的使用，使用命令行工具会更加方便。若要使用命令行工具，一定要知道它的使用环境，在这里学习一下 bash shell 的环境变量。-</p>
+<p>
       
     </div>
     <footer>
       
-      
-      
-        <div class="alignright share-box">
   
-</div>
+  <div class="categories">
+    <a href="/categories/学习记录/">学习记录</a>
+  </div>
+
+      
+  
+  <div class="tags">
+    <a href="/tags/Linux-Unix/">Linux/Unix</a>
+  </div>
+
+      
+        
+          <div class="alignright">
+            <a href="/2014/10/05/bash-环境变量/" class="more-link">Read More</a>
+          </div>
+        
       
       <div class="clearfix"></div>
     </footer>
@@ -116,6 +108,16 @@
 </article>
 
 
+
+  
+
+  <nav id="pagination">
+  
+    <a href="/archives/2014/" class="alignleft prev">上一页</a>
+  
+  
+  <div class="clearfix"></div>
+</nav>
 </div></div>
     <aside id="sidebar" class="alignright">
   
