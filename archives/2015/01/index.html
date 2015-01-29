@@ -1,0 +1,355 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>归档：2015/1 | XingSheng&#39;s Blog</title>
+  <meta name="author" content="XingSheng">
+  
+  <meta name="description" content="heihei">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  
+  <meta property="og:site_name" content="XingSheng&#39;s Blog"/>
+
+  
+    <meta property="og:image" content="undefined"/>
+  
+
+  <link type="image/x-icon" href="/favicon.ico" rel="shortcut icon">
+  <link rel="alternate" href="/atom.xml" title="XingSheng&#39;s Blog" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+  
+<script type="text/javascript">
+#你的百度统计代码
+</script>
+
+  # 
+
+</head>
+
+
+<body>
+  <header id="header" class="inner"><div id="nav-top">
+  <div class="alignleft main-title">
+    <h1>XingSheng&#39;s Blog</h1>
+    <h2></h2>
+  </div>
+  <nav id="main-nav" class="alignright">
+    <ul>
+      
+        <li><a href="/">Home</a></li>
+      
+        <li><a href="/archives">Archives</a></li>
+      
+    </ul>
+    <div class="clearfix"></div>
+  </nav>
+  <div class="clearfix"></div>
+</div></header>
+  <div id="content" class="inner">
+    <div id="main-col" class="alignleft"><div id="wrapper">
+<h2 class="archive-title">2015/1</h2>
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-29T07:47:07.000Z"><a href="/2015/01/29/doc1/">1月 29 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/29/doc1/">doc1</a></h1>
+  
+
+      
+    </header>
+    <div class="entry">
+      
+        
+        <h5 id="请大家一起完善这个更新步骤">请大家一起完善这个更新步骤</h5>
+<h3 id="准备更新资源步骤">准备更新资源步骤</h3>
+<ol>
+<li><p>获取更新内容表，在准备更新前，确认一下将要更新的内容列表。</p>
+</li>
+<li><p>获取更新文件，合并更新功能分支到release_develop。使用<code>git diffient</code>把上次热更版本到合并后版本的资源提出，加密处理后提交到 <a href="http://119.161.208.199:8080/superhero/update_zip_res_pub">update_zip_res_pub</a> 库，在<a href="http://119.161.208.199:8080/superhero/update_zip_res_pub">update_zip_res_pub</a>打一个新的测试<code>tag</code>,告知测试人员发布到test上进行测试。</p>
+<blockquote>
+<p><strong>注意：</strong>如果修改期间有文件的删除操作，一定要让测试人员清除掉测试设备的缓存资源，清除掉后端所有热更资源，重新发布一次新的测试资源。不让被删除的资源影响后续的测试</p>
+</blockquote>
+</li>
+<li><p>将测试反馈的问题在新的分支上修改，修改完成后重复第2步，直到所有功能完全正确。</p>
+</li>
+<li><p>删掉<a href="http://119.161.208.199:8080/superhero/update_zip_res_pub">update_zip_res_pub</a>库的测试tag，在正确的提交记录打一个正式的热更<code>tag</code>。准备在pub、7ku进行热更。</p>
+<blockquote>
+<p><strong>注意：</strong>修改正确的热更<code>tag</code>后，再让测试人员清除掉测试设备的缓存资源，清除掉后端所有热更资源，重新发布一次新的测试资源。不影响非本次热更功能的测试。</p>
+</blockquote>
+</li>
+<li><p>把上述步骤得到的更新资源提出，提交到<a href="http://119.161.208.199:8080/superhero/update_zip_res_appstore">update_zip_res_appstore</a>,同上述2、3步骤在test_ios进行测试。测试通过后同4步，在<a href="http://119.161.208.199:8080/superhero/update_zip_res_appstore">update_zip_res_appstore</a>打一个正式<code>tag</code>，准备在appstore进行更新。</p>
+</li>
+</ol>
+
+      
+    </div>
+    <footer>
+      
+      
+      
+        
+          <div class="alignright share-box">
+  
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-29T03:54:53.000Z"><a href="/2015/01/29/StackOverflowLua/">1月 29 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/29/StackOverflowLua/">StackOverflowLua</a></h1>
+  
+
+      
+    </header>
+    <div class="entry">
+      
+        
+        <h2 id="table_element">table element</h2>
+<p>Maybe you will get the error <em> <code>&#39;}&#39; expected near &#39;=&#39;</code></em> when use the syntax like <code>local tab = { 1 = &quot;sth&quot;}</code> or <code>local tab = { &quot;key&quot; = &quot;sth&quot;}</code>.Here is the right way:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">local</span> <span class="constant">tab</span> = <span class="constant">tab</span> = { [<span class="number">1</span>] = <span class="string">"sth"</span>, [<span class="number">2</span>] = <span class="string">"sth"</span>, <span class="property">name</span> = <span class="string">"table"</span>, [<span class="string">"name1"</span>] = <span class="string">"table"</span>}  <span class="comment">-- right</span></div></pre></td></tr></table></figure>
+
+<h1 id="#">#</h1>
+
+      
+    </div>
+    <footer>
+      
+      
+      
+        
+          <div class="alignright share-box">
+  
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-06T10:10:22.000Z"><a href="/2015/01/06/2015-01-06/">1月 6 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/06/2015-01-06/">2015.01.06</a></h1>
+  
+
+      
+    </header>
+    <div class="entry">
+      
+        
+        
+      
+    </div>
+    <footer>
+      
+      
+      
+        
+          <div class="alignright share-box">
+  
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  
+    <article class="post">
+  
+  <div class="post-content">
+    <header>
+      
+      
+        <div class="icon"></div>
+        <time datetime="2015-01-04T12:21:07.000Z"><a href="/2015/01/04/2015-01-04/">1月 4 2015</a></time>
+      
+      
+  
+    <h1 class="title"><a href="/2015/01/04/2015-01-04/">2015.01.04</a></h1>
+  
+
+      
+    </header>
+    <div class="entry">
+      
+        
+        <h4 id="#">#</h4>
+<p>好久没写什么东西了！！！</p>
+
+      
+    </div>
+    <footer>
+      
+      
+      
+        
+          <div class="alignright share-box">
+  
+</div>
+        
+      
+      <div class="clearfix"></div>
+    </footer>
+  </div>
+</article>
+
+
+
+  
+
+  <nav id="pagination">
+  
+  
+  <div class="clearfix"></div>
+</nav>
+</div></div>
+    <aside id="sidebar" class="alignright">
+  
+<div class="widget tag">
+  <h3 class="title">标签</h3>
+  <div class="entry">
+    
+      <span><a href="/tags/Linux-Unix/">Linux/Unix<small>1</small></a></span>
+    
+      <span><a href="/tags/Lua/">Lua<small>1</small></a></span>
+    
+      <span><a href="/tags/lua/">lua<small>1</small></a></span>
+    
+      <span><a href="/tags/markdown/">markdown<small>1</small></a></span>
+    
+      <span><a href="/tags/练-随便写点什么/">练 随便写点什么<small>1</small></a></span>
+    
+      <span><a href="/tags/阅读/">阅读<small>1</small></a></span>
+    
+  </div>
+</div>
+
+</aside>
+    <div class="clearfix"></div>
+  </div>
+  <footer id="footer" class="inner"><div id="foot-nav">
+  <ul class="social">
+    
+      <li><a class="github" href="https://github.com/DaiXiang" title="github">github</a></li>
+    
+      <li><a class="rss" href="/atom.xml" title="rss">rss</a></li>
+    
+  </ul>
+</div>
+<div>
+  
+    &copy; 2015 XingSheng
+  
+</div>
+<div class="clearfix"></div></footer>
+  
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+<script type="text/javascript">
+  function navbar() {
+    var top = $('#nav-top').innerHeight();
+    $('#header').css('min-height', top);
+  }
+  navbar();
+  $(window).resize(navbar);
+</script>
+<div id="totop" class="footer-btn">
+  <a title="返回顶部"><img src="/img/scrollup.png"/></a>
+</div>
+
+<script type="text/javascript">
+  $(function(){ 
+	// When to show the scroll link
+	// higher number = scroll link appears further down the page   
+	var upperLimit = 800;
+	
+	// Our scroll link element
+	var scrollElem = $('#totop');
+   
+	// Scroll to top speed
+	var scrollSpeed = 500;
+   
+	// Show and hide the scroll to top link based on scroll position   
+	scrollElem.hide();
+	$(window).scroll(function () {            
+		var scrollTop = $(document).scrollTop();       
+		if ( scrollTop > upperLimit ) {
+		  $(scrollElem).stop().fadeTo(300, 1); // fade back in
+		  $(scrollElem).animate({bottom: "50px"}, { queue: false, duration: 10 });
+		} else {
+		  $(scrollElem).stop().fadeTo(300, 0); // fade out
+	      $(scrollElem).animate({bottom: "-200px"}, { queue: false, duration: 10 });
+			
+		}
+	});
+
+	// Scroll to top animation on click
+	$(scrollElem).click(function(){
+	  $('html, body').animate({scrollTop:0}, scrollSpeed);
+	  $(scrollElem).animate({bottom: "-200px"}, { queue: false, duration: 10 });
+	  return false;
+	});
+  });
+</script>
+</body>
+</html>

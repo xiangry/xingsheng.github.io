@@ -4,7 +4,7 @@
   <subtitle><![CDATA[Love XiangRY]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://sthkey.com/"/>
-  <updated>2014-11-12T14:55:30.996Z</updated>
+  <updated>2015-01-29T08:31:43.276Z</updated>
   <id>http://sthkey.com/</id>
   
   <author>
@@ -15,11 +15,191 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[doc1]]></title>
+    <link href="http://sthkey.com/2015/01/29/doc1/"/>
+    <id>http://sthkey.com/2015/01/29/doc1/</id>
+    <published>2015-01-29T07:47:07.000Z</published>
+    <updated>2015-01-29T08:30:18.000Z</updated>
+    <content type="html"><![CDATA[<h5 id="请大家一起完善这个更新步骤">请大家一起完善这个更新步骤</h5>
+<h3 id="准备更新资源步骤">准备更新资源步骤</h3>
+<ol>
+<li><p>获取更新内容表，在准备更新前，确认一下将要更新的内容列表。</p>
+</li>
+<li><p>获取更新文件，合并更新功能分支到release_develop。使用<code>git diffient</code>把上次热更版本到合并后版本的资源提出，加密处理后提交到 <a href="http://119.161.208.199:8080/superhero/update_zip_res_pub">update_zip_res_pub</a> 库，在<a href="http://119.161.208.199:8080/superhero/update_zip_res_pub">update_zip_res_pub</a>打一个新的测试<code>tag</code>,告知测试人员发布到test上进行测试。</p>
+<blockquote>
+<p><strong>注意：</strong>如果修改期间有文件的删除操作，一定要让测试人员清除掉测试设备的缓存资源，清除掉后端所有热更资源，重新发布一次新的测试资源。不让被删除的资源影响后续的测试</p>
+</blockquote>
+</li>
+<li><p>将测试反馈的问题在新的分支上修改，修改完成后重复第2步，直到所有功能完全正确。</p>
+</li>
+<li><p>删掉<a href="http://119.161.208.199:8080/superhero/update_zip_res_pub">update_zip_res_pub</a>库的测试tag，在正确的提交记录打一个正式的热更<code>tag</code>。准备在pub、7ku进行热更。</p>
+<blockquote>
+<p><strong>注意：</strong>修改正确的热更<code>tag</code>后，再让测试人员清除掉测试设备的缓存资源，清除掉后端所有热更资源，重新发布一次新的测试资源。不影响非本次热更功能的测试。</p>
+</blockquote>
+</li>
+<li><p>把上述步骤得到的更新资源提出，提交到<a href="http://119.161.208.199:8080/superhero/update_zip_res_appstore">update_zip_res_appstore</a>,同上述2、3步骤在test_ios进行测试。测试通过后同4步，在<a href="http://119.161.208.199:8080/superhero/update_zip_res_appstore">update_zip_res_appstore</a>打一个正式<code>tag</code>，准备在appstore进行更新。</p>
+</li>
+</ol>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h5 id="请大家一起完善这个更新步骤">请大家一起完善这个更新步骤</h5>
+<h3 id="准备更新资源步骤">准备更新资源步骤</h3>
+<ol>
+<li><p>获取更新内容表，在准备更新前，确认一下将要更新的内容列表。</p>
+</li>
+<li><p>获取更新文件，]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[StackOverflowLua]]></title>
+    <link href="http://sthkey.com/2015/01/29/StackOverflowLua/"/>
+    <id>http://sthkey.com/2015/01/29/StackOverflowLua/</id>
+    <published>2015-01-29T03:54:53.000Z</published>
+    <updated>2015-01-29T07:46:44.000Z</updated>
+    <content type="html"><![CDATA[<h2 id="table_element">table element</h2>
+<p>Maybe you will get the error <em> <code>&#39;}&#39; expected near &#39;=&#39;</code></em> when use the syntax like <code>local tab = { 1 = &quot;sth&quot;}</code> or <code>local tab = { &quot;key&quot; = &quot;sth&quot;}</code>.Here is the right way:</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">local</span> <span class="constant">tab</span> = <span class="constant">tab</span> = { [<span class="number">1</span>] = <span class="string">"sth"</span>, [<span class="number">2</span>] = <span class="string">"sth"</span>, <span class="property">name</span> = <span class="string">"table"</span>, [<span class="string">"name1"</span>] = <span class="string">"table"</span>}  <span class="comment">-- right</span></div></pre></td></tr></table></figure>
+
+<h1 id="#">#</h1>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h2 id="table_element">table element</h2>
+<p>Maybe you will get the error <em> <code>&#39;}&#39; expected near &#39;=&#39;</code></em> when ]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2015.01.06]]></title>
+    <link href="http://sthkey.com/2015/01/06/2015-01-06/"/>
+    <id>http://sthkey.com/2015/01/06/2015-01-06/</id>
+    <published>2015-01-06T10:10:22.000Z</published>
+    <updated>2015-01-06T14:14:36.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2015.01.04]]></title>
+    <link href="http://sthkey.com/2015/01/04/2015-01-04/"/>
+    <id>http://sthkey.com/2015/01/04/2015-01-04/</id>
+    <published>2015-01-04T12:21:07.000Z</published>
+    <updated>2015-01-05T04:39:45.000Z</updated>
+    <content type="html"><![CDATA[<h4 id="#">#</h4>
+<p>好久没写什么东西了！！！</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h4 id="#">#</h4>
+<p>好久没写什么东西了！！！</p>
+]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2014.12.13]]></title>
+    <link href="http://sthkey.com/2014/12/13/2014-12-13/"/>
+    <id>http://sthkey.com/2014/12/13/2014-12-13/</id>
+    <published>2014-12-13T11:59:18.000Z</published>
+    <updated>2014-12-13T11:59:18.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://sthkey.com/2014/12/06/hello-world/"/>
+    <id>http://sthkey.com/2014/12/06/hello-world/</id>
+    <published>2014-12-06T03:03:47.000Z</published>
+    <updated>2014-12-06T03:03:47.000Z</updated>
+    <content type="html"><![CDATA[<p><a id="more"></a><br>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick_Start">Quick Start</h2>
+<h3 id="Create_a_new_post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run_server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate_static_files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+
+<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>]]>
+    
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2014.11.19]]></title>
+    <link href="http://sthkey.com/2014/11/19/2014-11-19/"/>
+    <id>http://sthkey.com/2014/11/19/2014-11-19/</id>
+    <published>2014-11-19T12:52:52.000Z</published>
+    <updated>2014-12-06T03:03:47.000Z</updated>
+    <content type="html"><![CDATA[<p>时间的流逝，要留下点什么</p>
+<a id="more"></a>
+
+<p><img src="http://img-pili.qiniudn.com/pili/desktop/shijianchengzhu.gif" alt="霹雳 时间城主"><br><em>时间永恒</em></p>
+<h2 id="LUA">LUA</h2>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>时间的流逝，要留下点什么</p>
+]]>
+    
+    </summary>
+    
+      <category term="lua" scheme="http://sthkey.com/tags/lua/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2014.11.14]]></title>
+    <link href="http://sthkey.com/2014/11/14/2014-11-14/"/>
+    <id>http://sthkey.com/2014/11/14/2014-11-14/</id>
+    <published>2014-11-14T03:18:27.000Z</published>
+    <updated>2014-12-06T03:03:47.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[2014.11.13]]></title>
+    <link href="http://sthkey.com/2014/11/13/2014-11-13/"/>
+    <id>http://sthkey.com/2014/11/13/2014-11-13/</id>
+    <published>2014-11-13T02:14:39.000Z</published>
+    <updated>2014-12-06T03:03:47.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    <summary type="html">
+    <![CDATA[]]>
+    </summary>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[平时遇到的一些问题-暂未整理]]></title>
     <link href="http://sthkey.com/2014/11/12/%E5%B9%B3%E6%97%B6%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98-%E6%9A%82%E6%9C%AA%E6%95%B4%E7%90%86/"/>
     <id>http://sthkey.com/2014/11/12/平时遇到的一些问题-暂未整理/</id>
     <published>2014-11-12T09:07:26.000Z</published>
-    <updated>2014-11-12T13:36:05.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://blog.csdn.net/zsomsom/article/details/26361149  收藏到印象笔记中了">Android Error: Found duplicate file for APK: AndroidManifest.xml</a> </p>
 <p><a href="http://www.appsee.com/blog/dev/xcode-new-link-frameworks-automatically-fix-framework-not-found-metal-for-architecture-armv7">iOS Error: ramework not found Metal for architecture armv7</a></p>
 ]]></content>
@@ -34,7 +214,7 @@
     <link href="http://sthkey.com/2014/11/12/2014-11-12/"/>
     <id>http://sthkey.com/2014/11/12/2014-11-12/</id>
     <published>2014-11-12T02:40:06.000Z</published>
-    <updated>2014-11-12T14:55:22.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p>地狱变 </p>
 <a id="more"></a>
 
@@ -87,7 +267,7 @@
     <link href="http://sthkey.com/2014/11/11/2014-11-11/"/>
     <id>http://sthkey.com/2014/11/11/2014-11-11/</id>
     <published>2014-11-11T10:42:33.000Z</published>
-    <updated>2014-11-11T12:10:36.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p>王蠸 <code>萌萌哒</code><br><a id="more"></a></p>
 <p><img src="http://img-pili.qiniudn.com/pili/desktop/houkui.jpg" alt="霹雳 王蠸"></p>
 <p><a href="http://tieba.baidu.com/p/3213041430">小兔子有一颗玻璃心</a></p>
@@ -106,7 +286,7 @@
     <link href="http://sthkey.com/2014/11/06/2014-11-06/"/>
     <id>http://sthkey.com/2014/11/06/2014-11-06/</id>
     <published>2014-11-06T02:14:21.000Z</published>
-    <updated>2014-11-06T14:49:45.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<h2 id="昨晚忘记关窗户，冻醒了。%&gt;_&lt;%">昨晚忘记关窗户，冻醒了。<code>%&gt;_&lt;%</code></h2>
 <a id="more"></a>
 
@@ -144,7 +324,7 @@
     <link href="http://sthkey.com/2014/11/05/2014-11-05/"/>
     <id>http://sthkey.com/2014/11/05/2014-11-05/</id>
     <published>2014-11-05T02:44:35.000Z</published>
-    <updated>2014-11-06T02:13:08.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<h2 id="又是一个好天气">又是一个好天气</h2>
 <a id="more"></a>
 
@@ -196,7 +376,7 @@
     <link href="http://sthkey.com/2014/11/04/2014-11-04/"/>
     <id>http://sthkey.com/2014/11/04/2014-11-04/</id>
     <published>2014-11-04T04:18:24.000Z</published>
-    <updated>2014-11-04T14:15:00.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p>今天上个图，想到了英姿飒爽，豪气的一直找寻自我的 <em>快雪时晴 霁无瑕</em>。<code>英气</code></p>
 <a id="more"></a>
 
@@ -237,7 +417,7 @@
     <link href="http://sthkey.com/2014/11/03/2014-11-03/"/>
     <id>http://sthkey.com/2014/11/03/2014-11-03/</id>
     <published>2014-11-03T06:28:52.000Z</published>
-    <updated>2014-11-04T04:25:22.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p>想找个图片，脑海突然闪过紫色余分这个角色，虽然张狂，却也有敬畏。紫色出场不多，却每每有一种唯美。<br><a id="more"></a><br><img src="http://img-pili.qiniudn.com/pili/desktop/ziseyufen.gif" alt="紫色余分"><br><em>“我的王子啊…”,“如果再让我遇见你一次，我还是会选择和你比剑，然后输给你，做你的剑侍，在一路听你编剑声的故事”</em></p>
 <hr>
 <h2 id="天气">天气</h2>
@@ -257,7 +437,7 @@
     <link href="http://sthkey.com/2014/10/27/%E5%A5%BD%E5%8D%9A%E5%AE%A2/"/>
     <id>http://sthkey.com/2014/10/27/好博客/</id>
     <published>2014-10-27T02:15:17.000Z</published>
-    <updated>2014-10-27T02:28:23.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p><a href="http://ohcoder.com/">Oh!Coder</a></p>
 ]]></content>
     <summary type="html">
@@ -272,7 +452,7 @@
     <link href="http://sthkey.com/2014/10/16/Lua-Debug/"/>
     <id>http://sthkey.com/2014/10/16/Lua-Debug/</id>
     <published>2014-10-16T06:18:54.000Z</published>
-    <updated>2014-10-16T07:41:42.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p><a id="more"></a><br><em>当要定位lua某个方法被调用的位置通常可以通过打印堆栈信息来做到，刚接触，找到这篇文章<a href="http://see.sl088.com/wiki/Lua_debug" title="Lua Debug">“Lua debug”</a></em></p>
 <hr>
 <h3 id="debug">debug</h3>
@@ -298,7 +478,7 @@
     <link href="http://sthkey.com/2014/10/06/%E9%98%85%E8%AF%BB/"/>
     <id>http://sthkey.com/2014/10/06/阅读/</id>
     <published>2014-10-06T02:36:32.000Z</published>
-    <updated>2014-10-13T02:16:39.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<p><a id="more"></a><br><img src="http://img-pili.qiniudn.com/pili%2Fdesktop%2Fxiangranyi.jpg" alt="霹雳布袋戏：香染衣" title="霹雳布袋戏：香染衣"></p>
 <hr>
 <h2 id="路在脚下"><em>路在脚下</em></h2>
@@ -314,43 +494,11 @@
   </entry>
   
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <link href="http://sthkey.com/2014/10/05/hello-world/"/>
-    <id>http://sthkey.com/2014/10/05/hello-world/</id>
-    <published>2014-10-05T12:46:21.000Z</published>
-    <updated>2014-10-05T12:46:21.000Z</updated>
-    <content type="html"><![CDATA[<p><a id="more"></a><br>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">trobuleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2>
-<h3 id="Create_a_new_post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run_server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-
-<p>More info: <a href="http://hexo.io/docs/deployment.html">Deployment</a></p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>]]>
-    
-    </summary>
-    
-  </entry>
-  
-  <entry>
     <title><![CDATA[初识markdown]]></title>
     <link href="http://sthkey.com/2014/10/05/%E5%88%9D%E8%AF%86markdown/"/>
     <id>http://sthkey.com/2014/10/05/初识markdown/</id>
     <published>2014-10-05T04:10:30.000Z</published>
-    <updated>2014-10-13T02:16:40.000Z</updated>
+    <updated>2014-12-06T03:03:47.000Z</updated>
     <content type="html"><![CDATA[<h2 id="接触">接触</h2>
 <p><em>程序猿一只，突然意识到要写点东西，为hexo而接触到了markdown这个为广大码农所用的标记语言，<br>看来自己不是个合格的程序员那。在这里用这片文字作为自己的第一步，hello world。</em></p>
 <hr>
@@ -435,7 +583,7 @@
 </code></pre><h2 id="自动链接">自动链接</h2>
 <hr>
 <p><a href="http://ibruce.info">http://ibruce.info</a></p>
-<a href="&#109;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#98;&#x75;&#x2e;&#x72;&#117;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#98;&#x75;&#x2e;&#x72;&#117;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a>
+<a href="&#x6d;&#97;&#x69;&#108;&#116;&#111;&#58;&#98;&#117;&#x2e;&#x72;&#x75;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;">&#98;&#117;&#x2e;&#x72;&#x75;&#x40;&#x71;&#x71;&#46;&#x63;&#x6f;&#x6d;</a>
 
 <pre><code>    尖括号
     <span class="tag">&lt;<span class="title">http:</span>//<span class="attribute">ibruce.info</span>&gt;</span>
@@ -481,58 +629,6 @@ println( s )
     </summary>
     
       <category term="markdown" scheme="http://sthkey.com/tags/markdown/"/>
-    
-      <category term="学习记录" scheme="http://sthkey.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title><![CDATA[bash 环境变量]]></title>
-    <link href="http://sthkey.com/2014/10/05/bash-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F/"/>
-    <id>http://sthkey.com/2014/10/05/bash-环境变量/</id>
-    <published>2014-10-05T02:38:55.000Z</published>
-    <updated>2014-10-05T12:34:29.000Z</updated>
-    <content type="html"><![CDATA[<p>-日常应用和开发过程中，经常会遇到一些问题，比如移动删除某些文件，批量的做某些重复的工作、某些工具的使用，使用命令行工具会更加方便。若要使用命令行工具，一定要知道它的使用环境，在这里学习一下 bash shell 的环境变量。-</p>
-<p><a id="more"></a></p>
-<h4 id="查看系统的环境变量">查看系统的环境变量</h4>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ env</div></pre></td></tr></table></figure>
-
-<h4 id="常见环境变量">常见环境变量</h4>
-<ul>
-<li>SHELL：当前用户使用的是哪种shell。shell的种类繁多，不同的shell在移植上会有差别，本人初学，使用的bash，未考虑移植</li>
-<li>PATH：决定了shell将要到哪些目录中寻找命令或程序。注意PATH一般会是/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin这种格式，’:’标示并列，标示PATH有多个值，查找个时候会依次按照这些值去查找</li>
-<li>HOME：当前用户的主目录</li>
-<li>HOSTNAME：是指主机的名称，许多应用程序如果要用到主机名的话，通常是从这个环境变量中来取得的</li>
-<li>PS1：是基本提示符，对于root用户是#，对于普通用户是$</li>
-<li>PS2：是附属提示符，默认是“&gt;”。可以通过修改此环境变量来修改当前的命令符，比如下列命令会将提示符修改成字符串“Hello,My NewPrompt :) ”</li>
-</ul>
-<h3 id="环境变量设置">环境变量设置</h3>
-<p><em>Linux/Unix系统是多用户系统，每个用户登录系统后，都会有一个专用的运行环境。通常每个用户默认的环境都是相同的，默认的这一组环境实际上就是一组全局的环境变量。对于单个用户，可以根据自己的需求对自己的运行环境进行定制，其方法就是修改相应的系统环境变量。</em></p>
-<p>这些环境变量都是在某些特定的文件中被定义的：</p>
-<pre><code>    /etc/profile:此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.
-    并从/etc/profile.d目录的配置文件中搜集<span class="built_in">shell</span>的设置.
-    /etc/bashrc:为每一个运行bash <span class="built_in">shell</span>的用户执行此文件.当bash <span class="built_in">shell</span>被打开时,该文件被读取.
-    ~/.bash_profile:每个用户都可使用该文件输入专用于自己使用的<span class="built_in">shell</span>信息,当用户登录时,该
-    文件仅仅执行一次!默认情况下,他设置一些环境变量,执行用户的.bashrc文件.
-    ~/.bashrc:该文件包含专用于你的bash <span class="built_in">shell</span>的bash信息,当登录时以及每次打开新的<span class="built_in">shell</span>时,该
-    该文件被读取.
-    ~/.bash_logout:当每次退出系统(退出bash <span class="built_in">shell</span>)时,执行该文件. 
-</code></pre><p>另外,/etc/profile中设定的变量(全局)的可以作用于任何用户,而~/.bashrc等中设定的变量(局部)只能继承/etc/profile中的变量,他们是”父子”关系.</p>
-<pre><code>    ~/.bash_profile 是交互式、login 方式进入 bash 运行的
-    ~/.bashrc 是交互式 non-login 方式进入 bash 运行的
-</code></pre><p>通常二者设置大致相同，所以通常前者会调用后者。</p>
-<p>设置生效：可以重启生效，也可以使用命令：source<br>    source /etc/profile</p>
-<p> .bash_profile、.bashrc、和.bash_logout详细区别还请看<a href="http://blog.163.com/wang_hai_fei/blog/static/309020312008728333912/" title="环境变量详情">环境变量详情</a></p>
-<hr>
-<p> 目前理解到的就这些，等有了新的收获再更新吧</p>
-]]></content>
-    <summary type="html">
-    <![CDATA[<p>-日常应用和开发过程中，经常会遇到一些问题，比如移动删除某些文件，批量的做某些重复的工作、某些工具的使用，使用命令行工具会更加方便。若要使用命令行工具，一定要知道它的使用环境，在这里学习一下 bash shell 的环境变量。-</p>
-<p>]]>
-    
-    </summary>
-    
-      <category term="Linux/Unix" scheme="http://sthkey.com/tags/Linux-Unix/"/>
     
       <category term="学习记录" scheme="http://sthkey.com/categories/%E5%AD%A6%E4%B9%A0%E8%AE%B0%E5%BD%95/"/>
     
